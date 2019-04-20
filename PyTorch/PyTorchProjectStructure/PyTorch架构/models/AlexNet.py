@@ -1,7 +1,7 @@
 from .BasicModule import BasicModule
 from torch import nn
 
-class AlexNet:
+class AlexNet(BasicModule):
     def __init__(self,num_classes=2):
         """
         height_out = (height_in - height_kernel + 2*padding) / stride + 1
